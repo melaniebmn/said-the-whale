@@ -1,0 +1,51 @@
+/*   HEADER
+______________________ */
+
+
+.header {
+  background: $header__bg;
+  .header__logo {
+    float: left;
+    line-height: 0;
+    text-indent: -9999px;
+    margin: 0;
+    padding: 10px 1rem;
+    &:before {
+      float: left;
+      content: $logo;
+      text-indent: 0;
+    }
+  }
+  .navbar {
+    padding: 0 1rem;
+  }
+  .navbar-toggler {
+    border: 0;
+  }
+  .navbar-collapse {
+    margin: 0;
+    @media only screen and (max-width: 767px) {
+      font-size: 22px;
+      text-align: center;
+      li:not(:last-child) {
+        border-bottom: 1px solid $text--color;
+      }
+    }
+    .nav-link {
+      padding: 18px 1rem;
+      color: inherit;
+      transition: background .5s;
+      &:hover {
+        &.link__orca {
+          background: $gradient__orca;
+        }
+        &.link__beluga {
+          background: $gradient__beluga;
+        }
+        &.link__humpback {
+          background: $gradient__humpback;
+        }
+      }
+    }
+  }
+}

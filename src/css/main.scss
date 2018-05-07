@@ -1,0 +1,68 @@
+@import '../font/font.css';
+@import '_variables';
+@import '_reset';
+@import '_header';
+
+
+/*   GENERAL
+______________________ */
+
+main {
+  aside {
+    padding: 0 !important;
+    @media only screen and (min-width: 768px) {
+      overflow: hidden;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  article {
+    &.col-md-6,
+    &.col-12 {
+      padding: 5%;
+      @media only screen and (max-width: 767px) {
+        padding: 3% 10% 5%;
+      }
+    }
+    h2,
+    p {
+      margin: 0 0 5%;
+    }
+    .article__heading {
+      font: 400 45px/1.5 $font--primary;
+      text-align: right;
+      span {
+        display: block;
+        &:before {
+          content: '/';
+          margin: 0 15px 0 0;
+          color: $heading__border;
+        }
+        &:after {
+          display: block;
+          width: 50%;
+          height: 2px;
+          content: '';
+          background: $heading__border;
+          margin: 10px 0 15px;
+        }
+      }
+    }
+    p {
+      font-size: 22px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  #orca article {
+    background: $gradient__orca;
+  }
+  #beluga article {
+    background: $gradient__beluga;
+  }
+  #humpback article {
+    background: $gradient__humpback;
+  }
+}

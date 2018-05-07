@@ -1,0 +1,59 @@
+/*   RESET
+______________________ */
+
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html body {
+  font-family: $font--primary;
+  -webkit-appearance: none;
+  color: $text--color;
+}
+
+// Removes extra button padding in Firefox
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+// Prevents overflow especially on mobile
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
