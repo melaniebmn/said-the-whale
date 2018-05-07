@@ -8,7 +8,7 @@ module.exports = {
   entry: { main: './src/index.js' },
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'docs')
   },
   devServer: {
     contentBase: './src',
@@ -43,7 +43,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['docs']),
     new ExtractTextPlugin({filename: 'main.css'}),
     new HtmlWebpackPlugin({
       inject: false,
