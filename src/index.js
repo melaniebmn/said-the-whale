@@ -23,6 +23,8 @@ $(document).ready(function() {
       scrollTop: $('section'+url+'').offset().top - 50
     }, 500, 'swing');
 
+    $('#navbarCollapse').removeClass('show');
+
     e.preventDefault();
   });
 });
